@@ -41,37 +41,35 @@ module.exports = function (grunt) {
           }
         },
         connect: {
+          options: {
+            port: 9000,
+            livereload: 35729,
+            // change this to '0.0.0.0' to access the server from outside
+            hostname: '0.0.0.0'
+          },
+          livereload: {
             options: {
-                port: 9000,
-                livereload: 35729,
-                // change this to '0.0.0.0' to access the server from outside
-                hostname: '0.0.0.0'
-            },
-            livereload: {
-                options: {
-                    open: true,
-                    base: [
-                        '.tmp',
-                        '<%= yeoman.app %>'
-                    ]
-                }
-            },
-            test: {
-                options: {
-                    base: [
-                        '.tmp',
-                        'test',
-                        '<%= yeoman.app %>'
-                    ]
-                }
-            },
-            dist: {
-                options: {
-                    open: true,
-                    base: '<%= yeoman.dist %>',
-                    livereload: false
-                }
+              open: true,
+              base: [
+                '<%= yeoman.app %>'
+              ]
             }
+          },
+          test: {
+            options: {
+              base: [
+                'test',
+                '<%= yeoman.app %>'
+              ]
+            }
+          },
+          dist: {
+            options: {
+              open: true,
+              base: '<%= yeoman.dist %>',
+              livereload: false
+            }
+          }
         },
         clean: {
             dist: {
