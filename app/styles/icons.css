@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'novlcons';
+  src: url("/assets/fonts/novlcons.eot") format("embedded-opentype"), url("/assets/fonts/novlcons.woff") format("woff"), url("/assets/fonts/novlcons.ttf") format("truetype"), url("/assets/fonts/novlcons.svg#novlcons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000312}}
+[data-icon]:before {
+  font-family: 'novlcons';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000329}}
+.icon {
+  font-family: 'novlcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000338}}
+.icon-novl:before {
+  content: "\e013";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000341}}
+.icon-twitter:before {
+  content: "\e000";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000344}}
+.icon-facebook:before {
+  content: "\e001";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000347}}
+.icon-facebook-f:before {
+  content: "\e00a";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000350}}
+.icon-cloud:before {
+  content: "\e003";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000353}}
+.icon-comment:before {
+  content: "\e01a";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000356}}
+.icon-heart:before {
+  content: "\e006";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000359}}
+.icon-heart-broken:before {
+  content: "\e011";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000362}}
+.icon-move:before {
+  content: "\e007";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000365}}
+.icon-photo-upload:before {
+  content: "\e008";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000368}}
+.icon-search:before {
+  content: "\e009";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000371}}
+.icon-upload:before {
+  content: "\e00c";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000374}}
+.icon-write:before {
+  content: "\e00d";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000377}}
+.icon-menu:before {
+  content: "\e017";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000380}}
+.icon-home:before {
+  content: "\e00f";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000383}}
+.icon-cog:before {
+  content: "\e010";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000386}}
+.icon-chevron-up:before {
+  content: "\e015";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000389}}
+.icon-chevron-down:before {
+  content: "\e016";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000392}}
+.icon-chevron-right:before {
+  content: "\e018";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000395}}
+.icon-chevron-left:before {
+  content: "\e01b";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\0000398}}
+.icon-play:before {
+  content: "\e019";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003101}}
+.icon-check:before {
+  content: "\e01c";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003104}}
+.icon-expand:before {
+  content: "\e600";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003107}}
+.icon-shrink:before {
+  content: "\e601";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003110}}
+.icon-image:before {
+  content: "\e602";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003113}}
+.icon-grid:before {
+  content: "\e603";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003116}}
+.icon-right-aside:before {
+  content: "\e604";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003119}}
+.icon-left-aside:before {
+  content: "\e605";
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/icons\.scss}line{font-family:\00003122}}
+.icon-paper:before {
+  content: "\e606";
+}
