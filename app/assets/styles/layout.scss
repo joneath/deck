@@ -282,6 +282,38 @@ a {
       text-align: center;
     }
   }
+  &.split {
+    .half {
+      height: 100%;
+      width: 50%;
+      float: left;
+      position: relative;
+      overflow: hidden;
+    }
+    .choice-wrap {
+      height: 76px;
+      width: 76px;
+      margin: -38px 0 0 -38px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      line-height: 78px;
+
+      span {
+        height: 100%;
+        width: 100%;
+        display: block;
+        font-size: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: none;
+        color: #666;
+        background-color: #fff;
+        border-radius: 100%;
+      }
+    }
+  }
   &.video {
     overflow: hidden;
   }
@@ -411,6 +443,16 @@ a {
       }
       .right {
         z-index: 1;
+      }
+    }
+    &.split {
+      .half {
+        opacity: .75;
+        @include single-transition(all, .15s);
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }
@@ -911,6 +953,30 @@ a {
         padding: 6% 3%;
         font-size: 28px;
         line-height: 1.2;
+      }
+    }
+    &.split {
+      &.cover {
+        h1 {
+          font-size: 38px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+      }
+      .card-content {
+        padding-top: 12.5% !important;
+      }
+      .choice-wrap {
+        height: 60px;
+        width: 60px;
+        margin: -30px 0 0 -30px;
+        line-height: 60px;
+      }
+      .half {
+        height: 50%;
+        width: 100%;
+        float: none;
       }
     }
   }

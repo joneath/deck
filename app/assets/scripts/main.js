@@ -146,7 +146,7 @@ $(function() {
     $nextCard = $activeCard.next();
     if (prevActive != activeIndex) {
       prevActive = activeIndex;
-      if ($activeCard.hasClass('next')) {
+      if ($activeCard.hasClass('next') && !$activeCard.hasClass('split')) {
         nextStory();
         return;
       }
@@ -225,7 +225,7 @@ $(function() {
       var nextTranslate = diffPercent / 2;
       var opacityDiff = diffPercent;
       var scaleDiff = 1 + (.6 - (diffPercent * .6));
-      var scaleDiffInverse = 1 - (.6 - (diffPercent * .6));
+      var scaleDiffInverse = 1 - (.5 - (diffPercent * .5));
       $nextCard.find('.bg.blurred').css({
         opacity: .55 - (opacityDiff * .55),
         'transform': 'scale(' + scaleDiff + ')'
