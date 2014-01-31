@@ -12,7 +12,8 @@ $(function() {
       cardHeight,
       cardTops,
       cardQuarters,
-      cardMids;
+      cardMids,
+      windowWidth;
 
   function nextCard() {
     var $dot = $('.card-dot.active').next();
@@ -83,7 +84,8 @@ $(function() {
   }
 
   function updateCardTops() {
-    cardHeight = $(window).height() * 1;
+    cardHeight = $(window).height();
+    windowWidth = $(window).width();
     cardTops = [];
     cardMids = [];
     cardQuarters = [];
@@ -189,11 +191,11 @@ $(function() {
       var opacityDiff = diffPercent * 10;
       var scaleDiff = (1 - (diffPercent * 3));
       $activeCard.find('.bg.normal').css({
-        opacity: Math.min(.55 + opacityDiff, .55),
+        opacity: Math.min(.70 + opacityDiff, .70),
         'transform': 'scale(' + scaleDiff + ')'
       });
       $activeCard.find('.bg.blurred').css({
-        opacity: Math.min(-opacityDiff, .55),
+        opacity: Math.min(-opacityDiff, .70),
         'transform': 'scale(' + scaleDiff + ')'
       });
     }
@@ -205,6 +207,11 @@ $(function() {
         diffWithSpeed,
         translated,
         translate;
+
+    var nextTranslate = diffPercent / 2;
+    var opacityDiff = diffPercent;
+    var scaleDiff = 1 + (.6 - (diffPercent * .6));
+    var scaleDiffInverse = 1 - (.5 - (diffPercent * .5));
 
     $activeCard.find('.js-parallax-content').each(function() {
       $parallaxContent = $(this);
@@ -222,16 +229,12 @@ $(function() {
       }
     });
     if ($nextCard.hasClass('next')) {
-      var nextTranslate = diffPercent / 2;
-      var opacityDiff = diffPercent;
-      var scaleDiff = 1 + (.6 - (diffPercent * .6));
-      var scaleDiffInverse = 1 - (.5 - (diffPercent * .5));
       $nextCard.find('.bg.blurred').css({
-        opacity: .55 - (opacityDiff * .55),
+        opacity: .70 - (opacityDiff * .70),
         'transform': 'scale(' + scaleDiff + ')'
       });
       $nextCard.find('.bg.normal').css({
-        opacity: (opacityDiff * .55),
+        opacity: (opacityDiff * .70),
         'transform': 'scale(' + scaleDiff + ')'
       });
       $parallaxContent = $nextCard.find('.js-parallax-content');
@@ -240,6 +243,27 @@ $(function() {
       $parallaxContent.css({
         opacity: diffPercent + .25,
         transform: 'translate3d(0,' + nextTranslate + 'px,0) scale(' + scaleDiffInverse + ')'
+      });
+    }
+    if ($nextCard.hasClass('split')) {
+      nextTranslate = windowWidth - ((windowWidth * diffPercent) + (cardHeight * .30));
+      nextTranslate = Math.max(0, nextTranslate);
+      $nextCard.find('.half-left').css({
+        transform: 'translate3d(-' + nextTranslate + 'px,0,0)'
+      });
+      $nextCard.find('.half-right').css({
+        transform: 'translate3d(' + nextTranslate + 'px,0,0)'
+      });
+      $parallaxContent = $nextCard.find('.js-parallax-content');
+      $parallaxContent.css({
+        opacity: 1 - diffPercent,
+        transform: 'translate3d(0,' + ((diffPercent * cardHeight) * .5) + 'px,0)'
+      });
+    }
+    if ($activeCard.hasClass('split')) {
+      scaleDiff = 1 + (diffPercent * 3);
+      $activeCard.find('.bg.normal').css({
+        'transform': 'scale(' + scaleDiff + ')'
       });
     }
   });

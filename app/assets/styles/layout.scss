@@ -283,32 +283,41 @@ a {
     }
   }
   &.split {
+    background-color: #ddd;
+
     .half {
       height: 100%;
       width: 50%;
       float: left;
       position: relative;
       overflow: hidden;
+      z-index: 2;
+      background-color: #111;
+      cursor: pointer;
+    }
+    .half-wrap {
+      height: 100%;
     }
     .choice-wrap {
-      height: 76px;
-      width: 76px;
-      margin: -38px 0 0 -38px;
+      height: 80px;
+      width: 80px;
+      margin-left: -40px;
       position: absolute;
-      top: 50%;
+      top: 15px;
       left: 50%;
-      z-index: 2;
-      line-height: 78px;
+      z-index: 4;
+      line-height: 80px;
 
       span {
         height: 100%;
-        width: 100%;
+        width:  100%;
         display: block;
-        font-size: 24px;
+        font-size: 32px;
         text-align: center;
         text-transform: uppercase;
+        color: #444;
+        font-weight: 400;
         text-shadow: none;
-        color: #666;
         background-color: #fff;
         border-radius: 100%;
       }
@@ -446,12 +455,35 @@ a {
       }
     }
     &.split {
-      .half {
+      .half-wrap {
         opacity: .75;
-        @include single-transition(all, .15s);
+        @include single-transition(opacity, .15s);
 
         &:hover {
           opacity: 1;
+        }
+      }
+      .choice-wrap {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+
+        span {
+          height: auto;
+          width: auto;
+          display: block;
+          font-size: 84px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #aaa;
+          font-weight: 400;
+          text-shadow: 0 1px rgba(255, 255, 255, 0.5);
+          background-color: inherit;
+          border-radius: 0;
         }
       }
     }
@@ -506,7 +538,7 @@ a {
 
   .bg {
     @include scale(1);
-    opacity: .55;
+    opacity: .70;
 
     &.blurred {
       opacity: 0;
@@ -871,14 +903,6 @@ a {
 .loading {
   .cover {
     opacity: 0;
-    // .bg {
-    //   &.normal {
-    //     opacity: 0;
-    //   }
-    //   &.blurred {
-    //     opacity: .55;
-    //   }
-    // }
   }
 }
 
@@ -897,6 +921,16 @@ a {
     &.with-blockquote {
       .blockquote {
         font-size: 32px;
+      }
+    }
+    &.split {
+      &.cover {
+        h1 {
+          font-size: 48px;
+        }
+        h4 {
+          font-size: 22px;
+        }
       }
     }
   }
@@ -970,7 +1004,7 @@ a {
       .choice-wrap {
         height: 60px;
         width: 60px;
-        margin: -30px 0 0 -30px;
+        margin-left: -30px;
         line-height: 60px;
       }
       .half {
