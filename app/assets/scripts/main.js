@@ -454,7 +454,6 @@ $(function() {
     var opacityDiff = diffPercent * 2.5;
     var scaleDiff = (1 + (diffPercent / 2));
 
-    e.preventDefault();
 
     if (diff > 0) {
       touchDiff = 0;
@@ -468,6 +467,7 @@ $(function() {
       //   opacity: .70 - (opacityDiff * .70),
       // });
     } else {
+      e.preventDefault();
       $('.cards.active').css({
         'transform': 'translate3d(0,' + diff + 'px,0)'
       });
