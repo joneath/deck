@@ -33,7 +33,24 @@ $(function() {
   $('.card-dot').on('click', function(e) {
     var index = $(e.currentTarget).index('.card-dot');
     var top = cardTops[index];
-    $('html, body').animate({scrollTop: top}, 450);
+
+    if (Modernizr.touch) {
+      $activeCard = $('.cards.active .card:eq(' + index + ')');
+      touchTranslated = -top;
+       $('.cards.active').css({
+        'transform': 'translate3d(0,' + touchTranslated + 'px,0)',
+        'transition': 'all .35s'
+      });
+
+      $('.card-dot.active').removeClass('active');
+      var $activeDot = $('.card-dot:eq(' + index + ')');
+      if (!$activeDot.length) {
+        $activeDot = $('.card-dot:last');
+      }
+      $activeDot.addClass('active');
+    } else {
+      $('html, body').animate({scrollTop: top}, 450);
+    }
   });
   $('.heart').on('click', function(e) {
     var $target = $(e.currentTarget).find('.icon-heart');
@@ -46,8 +63,18 @@ $(function() {
     }, 1250);
   });
   $('.js-to-next').on('click', function(e) {
-    var diff = $('.js-to-next').offset().top;
-    $('html, body').animate({scrollTop: diff}, 450);
+    if (Modernizr.touch) {
+      nextStory();
+      $activeCard = $('.cards.active .cover');
+      touchTranslated = 0;
+      $('.cards.active').css({
+        'transform': 'translate3d(0,' + touchTranslated + 'px,0)',
+        'transition': 'all .2s'
+      });
+    } else {
+      var diff = $('.js-to-next').offset().top;
+      $('html, body').animate({scrollTop: diff}, 450);
+    }
   });
   $(window).on('keyup', function(e) {
     if (e.which == 39) {
@@ -110,8 +137,11 @@ $(function() {
       prevQuarterActive = -1,
       prevMidActive = -1,
       activeIndex = 0,
-      activeQuarterIndex = 0;
-      activeMidIndex = 0;
+      activeQuarterIndex = 0,
+      activeMidIndex = 0,
+      $activeCard = $('.cards.first .active'),
+      $nextCard,
+      $prevCard;
 
   $(window).on('scroll', function() {
     var scrollTop = $(window).scrollTop(),
@@ -120,9 +150,6 @@ $(function() {
         lowestMid = Infinity,
         diff,
         diffPercent,
-        $activeCard,
-        $nextCard,
-        $prevCard,
         $video;
 
     var i = cardTops.length - 1;
@@ -343,6 +370,108 @@ $(function() {
       top: newY + 'px',
       left: newX + 'px'
     });
+  });
+
+  var touchStartY = 0,
+      touchDiff = 0,
+      touchTranslated = 0,
+      hasMoved = false;
+
+  $(window).on('touchstart', function(e) {
+    hasMoved = false;
+    touchStartY = e.originalEvent.touches[0].pageY;
+    $('.cards.active').css('transition', '');
+
+    if (touchTranslated === 0) {
+      $('.cards.active .active .card-content').css({
+        'transition': ''
+      });
+      $('.cards.active .active .bg').css({
+        'transition': ''
+      });
+    }
+  });
+
+  $(window).on('touchend', function(e) {
+    var activeIndex = 0;
+
+    if (!hasMoved) {
+      return;
+    }
+    touchTranslated += touchDiff;
+
+    // Up
+    if (touchDiff > 0) {
+      $activeCard = $activeCard.prev();
+    } else if (touchDiff < 0) {
+      // Down
+      $activeCard = $activeCard.next();
+    } else {
+      touchTranslated = 0;
+      $('.cards.active .active .card-content').css({
+        'transform': 'translate3d(0,0,0)',
+        'transition': 'all .15s'
+      });
+      $('.cards.active .cover .bg.blurred').css({
+        opacity: 0,
+        'transition': 'all .15s'
+      });
+      $('.cards.active .cover .bg.normal').css({
+        opacity: .7,
+        'transition': 'all .15s'
+      });
+    }
+
+    if ($activeCard.hasClass('js-to-next')) {
+      $('.js-to-next').trigger('click');
+      return;
+    }
+
+    activeIndex = $activeCard.index();
+    touchTranslated = -(activeIndex * cardHeight);
+    $('.cards.active').css({
+      'transform': 'translate3d(0,' + touchTranslated + 'px,0)',
+      'transition': 'all .2s'
+    });
+
+    $('.card-dot.active').removeClass('active');
+    var $activeDot = $('.card-dot:eq(' + activeIndex + ')');
+    if (!$activeDot.length) {
+      $activeDot = $('.card-dot:last');
+    }
+    $activeDot.addClass('active');
+  });
+
+  $(window).on('touchmove', function(e) {
+    var moveY = e.originalEvent.touches[0].pageY,
+        diffPercent,
+        diff;
+
+    hasMoved = true;
+    touchDiff = (moveY - touchStartY);
+    diff = touchTranslated + touchDiff;
+    diffPercent = touchDiff / cardHeight;
+    var opacityDiff = diffPercent * 2.5;
+    var scaleDiff = (1 + (diffPercent / 2));
+
+    e.preventDefault();
+
+    if (diff > 0) {
+      touchDiff = 0;
+      $('.cards.active .active .card-content').css({
+        'transform': 'translate3d(0,' + diff + 'px,0)'
+      });
+      $('.cards.active .cover .bg.blurred').css({
+        opacity: Math.min((opacityDiff * .70), .7),
+      });
+      $('.cards.active .cover .bg.normal').css({
+        opacity: .70 - (opacityDiff * .70),
+      });
+    } else {
+      $('.cards.active').css({
+        'transform': 'translate3d(0,' + diff + 'px,0)'
+      });
+    }
   });
 
   $('body').on('click', '.zoom-wrap', function(e) {

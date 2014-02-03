@@ -586,9 +586,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-text-size-adjust: 100%;
+  overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000321}}
+.no-touch {
+  overflow: visible;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000324}}
 .site-nav-glass {
   height: 100%;
   width: 100%;
@@ -604,12 +610,12 @@ body {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000336}}
 .site-nav-glass.active {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000336}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000340}}
 .site-nav {
   max-width: 300px;
   position: fixed;
@@ -624,38 +630,38 @@ body {
   -o-transition: opacity 0.2s;
   transition: opacity 0.2s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000351}}
 .site-nav.active {
   opacity: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000355}}
 .nav-item {
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000355}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000359}}
 .nav-item:first-child a {
   padding-left: 53px;
   padding-top: 4px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000359}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000363}}
 .nav-item:first-child .icon-novl {
   float: none;
   font-size: 31px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000364}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000368}}
 .nav-item.header {
   padding: 5px 6px;
   background-color: #D6D6D6;
   color: #575757;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000373}}
 .nav-item.header h4 {
   font-size: 13px;
   font-weight: 600;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000379}}
 .nav-item a {
   padding: 2px 44px;
   padding-left: 52px;
@@ -663,12 +669,12 @@ body {
   line-height: 40px;
   color: #333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000386}}
 .nav-item a:hover {
   color: #fff;
   background-color: #333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000387}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000391}}
 .nav-item .icon {
   width: 38px;
   margin-left: -46px;
@@ -677,11 +683,11 @@ body {
   text-align: center;
   font-size: 26px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000395}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000399}}
 .nav-item .icon-paper {
   font-size: 24px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003102}}
 .nav-item .profile {
   height: 36px;
   width: 36px;
@@ -690,7 +696,7 @@ body {
   background-size: cover;
   border-radius: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003111}}
 .nav-item .search,
 .nav-item .settings {
   position: absolute;
@@ -699,32 +705,32 @@ body {
   font-size: 16px;
   color: #666;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003114}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003118}}
 .nav-item .search:hover,
 .nav-item .settings:hover {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003122}}
 .nav-item .settings {
   top: 2px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003121}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003125}}
 .nav-item .nav-text {
   font-weight: 600;
   font-size: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003131}}
 .notification {
   padding: 7px 10px 7px 52px;
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003131}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003135}}
 .notification:hover {
   color: #fff;
   background-color: #333;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003135}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003139}}
 .notification .profile-thumb {
   height: 38px;
   width: 38px;
@@ -736,12 +742,12 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003150}}
 .notification p {
   font-size: 15px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003155}}
 .nav-glass {
   height: 100%;
   width: 100%;
@@ -758,7 +764,7 @@ body {
   transition: opacity 0.15s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003167}}
 .container {
   height: 100%;
   position: relative;
@@ -766,12 +772,12 @@ body {
   background-color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003169}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003173}}
 a {
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003176}}
 .logo {
   height: 48px;
   width: 48px;
@@ -788,16 +794,16 @@ a {
   -o-transition: all 0.15s;
   transition: all 0.15s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003185}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003189}}
 .logo.active {
   background-color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003192}}
 .logo.active .site-nav {
   display: block;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003193}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003197}}
 .card-dots {
   height: 100%;
   width: 36px;
@@ -808,23 +814,23 @@ a {
   z-index: 10000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003206}}
 .card-jump {
   margin-left: -15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003205}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003209}}
 .card-jump a {
   color: rgba(0, 0, 0, 0.55);
   text-shadow: 0 1px rgba(255, 255, 255, 0.15);
   font-size: 44px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003212}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003216}}
 .no-touch .card-jump {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003216}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003220}}
 .card-dot {
   height: 14px;
   width: 14px;
@@ -838,7 +844,7 @@ a {
   -o-transition: all 0.15s;
   transition: all 0.15s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003227}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003231}}
 .card-dot:hover, .card-dot.active {
   -webkit-transform: scale(1.5, 1.5);
   -moz-transform: scale(1.5, 1.5);
@@ -846,7 +852,7 @@ a {
   -o-transform: scale(1.5, 1.5);
   transform: scale(1.5, 1.5);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003230}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003234}}
 .card-dot:hover .dot-inner, .card-dot.active .dot-inner {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -854,32 +860,36 @@ a {
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003238}}
 .card-dot.end {
   margin-bottom: 0;
   box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
   background-color: rgba(236, 236, 236, 0.75);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003243}}
 .card-dot.end .dot-inner {
   background-color: #222;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003247}}
 .card-dot a {
   height: 100%;
   width: 100%;
+  padding: 8px;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: -1px;
   display: block;
   border-radius: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003257}}
 .card-dot .dot-inner {
   height: 6px;
   width: 6px;
-  margin-top: 4px;
-  margin-left: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -3px 0 0 -3px;
+  z-index: 1;
   background-color: #fff;
   border-radius: 100%;
   -webkit-transition: all 0.15s;
@@ -893,37 +903,37 @@ a {
   transform: scale(0, 0);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003263}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003271}}
 .cards {
   height: 100%;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003275}}
 .cards.second {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003271}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003279}}
 .card {
   height: 100%;
   background-color: #fff;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003276}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003284}}
 .card.next {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003279}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003287}}
 .card.next .card-content {
   padding: 0 3%;
   padding-top: 50%;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003293}}
 .card.split {
   background-color: #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003288}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003296}}
 .card.split .half {
   height: 100%;
   width: 50%;
@@ -934,11 +944,11 @@ a {
   background-color: #111;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003298}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003306}}
 .card.split .half-wrap {
   height: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003309}}
 .card.split .choice-wrap {
   height: 80px;
   width: 80px;
@@ -949,7 +959,7 @@ a {
   z-index: 4;
   line-height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003319}}
 .card.split .choice-wrap span {
   height: 100%;
   width: 100%;
@@ -963,29 +973,29 @@ a {
   background-color: #fff;
   border-radius: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003334}}
 .card.video {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003337}}
 .card.text {
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003340}}
 .card.text p {
   font-size: 26px;
   line-height: 1.4;
   text-align: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003345}}
 .card.text .text-start {
   line-height: 26px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003350}}
 .card.with-blockquote .card-content {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003353}}
 .card.with-blockquote .card-image {
   height: 100%;
   width: 25%;
@@ -994,17 +1004,17 @@ a {
   background-position: 50%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003353}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003361}}
 .card.with-blockquote .center-wrap {
   width: 50%;
   float: left;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003357}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003365}}
 .card.with-blockquote .blockquote {
   padding: 15px 3%;
   font-size: 36px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003370}}
 .card .image {
   height: 100%;
   width: 100%;
@@ -1013,7 +1023,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003378}}
 .card .bg {
   height: 100%;
   width: 100%;
@@ -1025,7 +1035,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003381}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003389}}
 .card .bg video {
   min-width: 100%;
   min-height: 100%;
@@ -1039,27 +1049,27 @@ a {
   pointer-events: none;
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003394}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003402}}
 .card .bg video.playing {
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003399}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003407}}
 .card .bottom {
   color: #fff;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003403}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003411}}
 .card-push {
   height: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003406}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003414}}
 .text-start {
   font-weight: 500;
   font-size: 1.75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003410}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003418}}
 .card-bisected {
   height: 100%;
   width: 50%;
@@ -1067,20 +1077,20 @@ a {
   float: left;
   position: relative;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003417}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003425}}
 .card-bisected.left {
   padding-right: 1.5%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003420}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003428}}
 .card-bisected.right {
   padding-left: 1.5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003427}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003435}}
 .no-touch .card.next .card-content {
   padding-top: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003435}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003443}}
 .no-touch .card.coming-up .card-bisected.left, .no-touch .card.coming-up .card-bisected.right, .no-touch .card.passed .card-bisected.left, .no-touch .card.passed .card-bisected.right {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
@@ -1089,23 +1099,23 @@ a {
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003442}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003455}}
 .no-touch .card.to-left .left {
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003445}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003458}}
 .no-touch .card.to-left .right {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003450}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003463}}
 .no-touch .card.to-right .left {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003453}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003466}}
 .no-touch .card.to-right .right {
   z-index: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003458}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003489}}
 .no-touch .card.split .half-wrap {
   opacity: .75;
   -webkit-transition: opacity 0.15s;
@@ -1113,11 +1123,11 @@ a {
   -o-transition: opacity 0.15s;
   transition: opacity 0.15s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003462}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003493}}
 .no-touch .card.split .half-wrap:hover {
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003466}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003497}}
 .no-touch .card.split .choice-wrap {
   height: 100%;
   width: 100%;
@@ -1127,7 +1137,7 @@ a {
   left: 0;
   z-index: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003475}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003506}}
 .no-touch .card.split .choice-wrap span {
   height: auto;
   width: auto;
@@ -1141,14 +1151,14 @@ a {
   background-color: inherit;
   border-radius: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003491}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003522}}
 .no-touch .card-bisected {
   -webkit-transition: all 0.45s;
   -moz-transition: all 0.45s;
   -o-transition: all 0.45s;
   transition: all 0.45s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003494}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003525}}
 .no-touch .card-bisected.left {
   -webkit-transform: translate3d(50%, 0, 0);
   -moz-transform: translate3d(50%, 0, 0);
@@ -1156,7 +1166,7 @@ a {
   -o-transform: translate3d(50%, 0, 0);
   transform: translate3d(50%, 0, 0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003497}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003528}}
 .no-touch .card-bisected.right {
   -webkit-transform: translate3d(-50%, 0, 0);
   -moz-transform: translate3d(-50%, 0, 0);
@@ -1165,7 +1175,7 @@ a {
   transform: translate3d(-50%, 0, 0);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003502}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003533}}
 .card-content {
   height: 100%;
   padding: 3%;
@@ -1175,11 +1185,11 @@ a {
   font-style: normal;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003510}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003541}}
 .runout {
   background-color: #f9f9f9;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003513}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003544}}
 .runout h2 {
   margin-bottom: 3%;
   color: #444;
@@ -1187,12 +1197,12 @@ a {
   text-transform: uppercase;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003520}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003551}}
 .runout .bottom {
   background: none;
   padding-bottom: 3%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003524}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003555}}
 .runout .bottom h3 {
   font-size: 32px;
   color: #888;
@@ -1200,7 +1210,7 @@ a {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003532}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003563}}
 .cover {
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   font-family: "proxima-nova",sans-serif;
@@ -1208,7 +1218,7 @@ a {
   color: #fff;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003539}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003570}}
 .cover .bg {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -1217,24 +1227,24 @@ a {
   transform: scale(1, 1);
   opacity: .70;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003543}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003574}}
 .cover .bg.blurred {
   opacity: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003547}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003578}}
 .cover h1 {
   font-size: 84px;
   font-weight: 600;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003552}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003583}}
 .cover h4 {
   max-width: 1100px;
   margin: 0 auto;
   font-size: 26px;
   line-height: 1.3;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003558}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003589}}
 .cover .bottom {
   padding-top: 50px;
   padding-bottom: 10px;
@@ -1243,23 +1253,23 @@ a {
   background: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003566}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003597}}
 .attribution-wrap {
   margin-bottom: 60px;
   text-align: center;
   color: #bbb;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003571}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003602}}
 .attribution-wrap a {
   font-style: normal;
   font-weight: 600;
   color: #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003576}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003607}}
 .attribution-wrap a:hover {
   text-decoration: underline;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003580}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003611}}
 .attribution-wrap .profile-thumb {
   height: 72px;
   width: 72px;
@@ -1269,39 +1279,39 @@ a {
   background-size: cover;
   border-radius: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003589}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003620}}
 .attribution-wrap .attribution-text {
   margin-bottom: 2px;
   display: block;
   font-style: italic;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003594}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003625}}
 .attribution-wrap .attribution-date {
   display: block;
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003600}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003631}}
 .grid-card .card-content {
   padding: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003603}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003634}}
 .grid-card .bottom {
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, white 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003608}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003639}}
 .grid-card .caption-wrap {
   padding-bottom: 2%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003611}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003642}}
 .grid-card .caption {
   color: #444;
   font-size: 24px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003647}}
 .bottom {
   width: 100%;
   padding: 0 3%;
@@ -1313,7 +1323,7 @@ a {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003626}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003657}}
 .top {
   width: 100%;
   padding: 1% 3%;
@@ -1322,7 +1332,7 @@ a {
   top: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003633}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003664}}
 .down {
   height: 60px;
   width: 100px;
@@ -1335,20 +1345,20 @@ a {
   font-size: 100px;
   line-height: 60px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003645}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003676}}
 .down:hover {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003648}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003679}}
 .down.dark {
   color: #888;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003651}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003682}}
 .down.dark:hover {
   color: #444;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003656}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003687}}
 .blockquote {
   max-width: 1200px;
   margin: 0 auto;
@@ -1357,17 +1367,17 @@ a {
   line-height: 1.4;
   font-weight: 300;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003664}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003695}}
 .blockquote .text-start {
   line-height: 46px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003668}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003699}}
 .caption-wrap {
   padding-bottom: 5%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003671}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003702}}
 .caption {
   max-width: 860px;
   margin: 0 auto;
@@ -1375,83 +1385,83 @@ a {
   font-size: 32px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003678}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003709}}
 .grid {
   height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003683}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003714}}
 .grid-3 .grid-item:nth-child(1) {
   height: 50%;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003687}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003718}}
 .grid-3 .grid-item:nth-child(2) {
   height: 50%;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003691}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003722}}
 .grid-3 .grid-item:nth-child(3) {
   height: 50%;
   width: 50%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003699}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003730}}
 .grid-5 .grid-item:nth-child(1) {
   height: 50%;
   width: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003703}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003734}}
 .grid-5 .grid-item:nth-child(2) {
   height: 50%;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003707}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003738}}
 .grid-5 .grid-item:nth-child(3) {
   height: 25%;
   width: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003711}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003742}}
 .grid-5 .grid-item:nth-child(n+4) {
   height: 25%;
   width: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003719}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003750}}
 .grid-8 .grid-item:nth-child(1) {
   height: 33.333333%;
   width: 75%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003723}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003754}}
 .grid-8 .grid-item:nth-child(2) {
   height: 100%;
   width: 25%;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003728}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003759}}
 .grid-8 .grid-item:nth-child(n+3) {
   height: 33.333333%;
   width: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003736}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003767}}
 .grid-9 .grid-item:nth-child(1) {
   height: 33.333333%;
   width: 75%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003740}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003771}}
 .grid-9 .grid-item:nth-child(2) {
   height: 66.666666%;
   width: 25%;
   float: right;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003745}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003776}}
 .grid-9 .grid-item:nth-child(n+3) {
   height: 33.333333%;
   width: 25%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003751}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003782}}
 .grid-item {
   position: relative;
   float: left;
@@ -1461,48 +1471,48 @@ a {
   cursor: -webkit-zoom-in;
   cursor: -moz-zoom-in;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003759}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003790}}
 .grid-item .border-highlight {
   border: #FFF 3px solid;
 }
 
 @keyframes liked {
-  /* line 765, ../assets/styles/layout.scss */
+  /* line 796, ../assets/styles/layout.scss */
   15% {
     -webkit-transform: translate3d(35px, 50px, 0);
   }
 
-  /* line 768, ../assets/styles/layout.scss */
+  /* line 799, ../assets/styles/layout.scss */
   25% {
     -webkit-transform: translate3d(0, 75px, 0);
   }
 
-  /* line 771, ../assets/styles/layout.scss */
+  /* line 802, ../assets/styles/layout.scss */
   40% {
     -webkit-transform: translate3d(-35px, 100px, 0);
   }
 
-  /* line 774, ../assets/styles/layout.scss */
+  /* line 805, ../assets/styles/layout.scss */
   50% {
     -webkit-transform: translate3d(0, 125px, 0);
   }
 
-  /* line 777, ../assets/styles/layout.scss */
+  /* line 808, ../assets/styles/layout.scss */
   65% {
     -webkit-transform: translate3d(35px, 150px, 0);
   }
 
-  /* line 780, ../assets/styles/layout.scss */
+  /* line 811, ../assets/styles/layout.scss */
   75% {
     -webkit-transform: translate3d(0, 175px, 0);
   }
 
-  /* line 783, ../assets/styles/layout.scss */
+  /* line 814, ../assets/styles/layout.scss */
   90% {
     -webkit-transform: translate3d(-35px, 200px, 0);
   }
 
-  /* line 786, ../assets/styles/layout.scss */
+  /* line 817, ../assets/styles/layout.scss */
   100% {
     -webkit-transform: translate3d(0, 225px, 0) scale(2);
     color: red;
@@ -1510,47 +1520,47 @@ a {
 }
 
 @-webkit-keyframes liked {
-  /* line 793, ../assets/styles/layout.scss */
+  /* line 824, ../assets/styles/layout.scss */
   15% {
     -webkit-transform: translate3d(35px, -25px, 0) scale(1.125) rotate(15deg);
   }
 
-  /* line 796, ../assets/styles/layout.scss */
+  /* line 827, ../assets/styles/layout.scss */
   25% {
     -webkit-transform: translate3d(0, -50px, 0) scale(1.25);
   }
 
-  /* line 799, ../assets/styles/layout.scss */
+  /* line 830, ../assets/styles/layout.scss */
   40% {
     -webkit-transform: translate3d(-35px, -75px, 0) scale(1.375) rotate(-15deg);
     opacity: .75;
   }
 
-  /* line 803, ../assets/styles/layout.scss */
+  /* line 834, ../assets/styles/layout.scss */
   50% {
     -webkit-transform: translate3d(0, -100px, 0) scale(1.5);
     opacity: .65;
   }
 
-  /* line 807, ../assets/styles/layout.scss */
+  /* line 838, ../assets/styles/layout.scss */
   65% {
     -webkit-transform: translate3d(35px, -125px, 0) scale(1.625) rotate(15deg);
     opacity: .55;
   }
 
-  /* line 811, ../assets/styles/layout.scss */
+  /* line 842, ../assets/styles/layout.scss */
   75% {
     -webkit-transform: translate3d(0, -150px, 0) scale(1.75);
     opacity: .5;
   }
 
-  /* line 815, ../assets/styles/layout.scss */
+  /* line 846, ../assets/styles/layout.scss */
   90% {
     -webkit-transform: translate3d(-35px, -175px, 0) scale(1.875) rotate(-15deg);
     opacity: .25;
   }
 
-  /* line 819, ../assets/styles/layout.scss */
+  /* line 850, ../assets/styles/layout.scss */
   100% {
     -webkit-transform: translate3d(0, -200px, 0) scale(2);
     color: red;
@@ -1558,13 +1568,13 @@ a {
   }
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003826}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003857}}
 .bubble-options {
   font-size: 0;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003830}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003861}}
 .bubble-option {
   height: 100px;
   width: 100px;
@@ -1580,7 +1590,7 @@ a {
   -o-transition: all 0.15s;
   transition: all 0.15s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003842}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003873}}
 .bubble-option:hover {
   -webkit-transform: scale(1.15, 1.15);
   -moz-transform: scale(1.15, 1.15);
@@ -1588,20 +1598,20 @@ a {
   -o-transform: scale(1.15, 1.15);
   transform: scale(1.15, 1.15);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003845}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003876}}
 .bubble-option.heart {
   background-color: #FF005C;
   margin-bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003849}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003880}}
 .bubble-option.facebook {
   background-color: #3b5999;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003852}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003883}}
 .bubble-option.twitter {
   background-color: #00B0ED;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003856}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003887}}
 .bubble-option.has-liked:hover {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
@@ -1609,29 +1619,29 @@ a {
   -o-transform: scale(1, 1);
   transform: scale(1, 1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003859}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003890}}
 .bubble-option.has-liked .liked {
   display: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003862}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003893}}
 .bubble-option.has-liked .like-count {
   display: block;
   visibility: visible;
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003868}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003899}}
 .bubble-option a {
   color: #fff;
   line-height: 100px;
   display: block;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003873}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003904}}
 .bubble-option .liked {
   -webkit-animation: liked 1.25s;
   -moz-animation: liked 1.25s;
   animation: liked 1.25s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003878}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003909}}
 .bubble-option .like-count {
   height: 100%;
   width: 100%;
@@ -1651,87 +1661,94 @@ a {
   transition: opacity 0.15s;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003896}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003927}}
 .init .cover {
   -webkit-transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003899}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003930}}
 .init .cards {
   background-color: #111;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003904}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003935}}
 .loading .cover {
   opacity: 0;
 }
 
 @media only screen and (max-width: 1000px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003912}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003943}}
   .card.text p {
     font-size: 22px;
     line-height: 1.4;
     text-align: left;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003917}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003948}}
   .card.text .text-start {
     line-height: 22px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003922}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003953}}
   .card.with-blockquote .blockquote {
     font-size: 32px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003928}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003959}}
   .card.split.cover h1 {
     font-size: 48px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003931}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003962}}
   .card.split.cover h4 {
     font-size: 22px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003938}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003969}}
   .cover h1 {
     font-size: 64px;
     line-height: 1.1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003942}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003973}}
   .cover h4 {
     font-size: 24px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003946}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003977}}
   .blockquote {
     font-size: 38px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003949}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003980}}
   .blockquote .text-start {
     line-height: 38px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003953}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003984}}
   .caption {
     font-size: 26px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003956}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003987}}
   .grid-item .border-highlight {
     border-width: 2px;
   }
 }
 @media only screen and (max-width: 500px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003964}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003996}}
+  .card.cover.touchend .bg {
+    -webkit-transition: -webkit-transform 0.25s;
+    -moz-transition: -moz-transform 0.25s;
+    -o-transition: -o-transform 0.25s;
+    transition: transform 0.25s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031002}}
   .card.text p {
     margin-top: 8px;
     font-size: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003968}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031006}}
   .card.text .text-start {
     line-height: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003973}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031011}}
   .card.with-blockquote .card-image {
     height: 25%;
     width: 100%;
@@ -1739,103 +1756,108 @@ a {
     background-repeat: no-repeat;
     background-position: 50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003980}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031018}}
   .card.with-blockquote .center-wrap {
     height: 50% !important;
     width: 100%;
     overflow: hidden;
     display: block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003986}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031024}}
   .card.with-blockquote .blockquote {
     padding: 6% 3%;
     font-size: 28px;
     line-height: 1.2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003994}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031032}}
   .card.split.cover h1 {
     font-size: 38px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\00003997}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031035}}
   .card.split.cover h4 {
     font-size: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031001}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031039}}
   .card.split .card-content {
     padding-top: 12.5% !important;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031004}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031042}}
   .card.split .choice-wrap {
     height: 60px;
     width: 60px;
-    margin-left: -30px;
+    margin: -30px 0 0 -30px;
     line-height: 60px;
+    top: 50%;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031010}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031049}}
   .card.split .half {
     height: 50%;
     width: 100%;
     float: none;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031054}}
+  .card.split .bottom {
+    display: none;
+  }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031018}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031060}}
   .cover .card-content {
     padding-bottom: 125px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031021}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031063}}
   .cover h1 {
     font-size: 48px;
     line-height: 1.1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031025}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031067}}
   .cover h4 {
     font-size: 24px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031029}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031071}}
   .attribution-wrap {
     margin-bottom: 50px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031032}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031074}}
   .attribution-wrap .profile-thumb {
     height: 64px;
     width: 64px;
     margin-bottom: 6px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031038}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031080}}
   .card-dots {
     width: 30px;
     padding: 6px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031042}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031084}}
   .caption {
     font-size: 24px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031045}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031087}}
   .blockquote {
     font-size: 28px;
     line-height: 1.2;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031049}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031091}}
   .blockquote .text-start {
     line-height: 28px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031053}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031095}}
   .card-bisected {
     width: 100%;
     height: 50%;
     float: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031059}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031101}}
   .card-bisected.left, .card-bisected.right {
     padding: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031064}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/joneath\/workspace\/deck\/app\/assets\/styles\/layout\.scss}line{font-family:\000031106}}
   .grid-item .border-highlight {
     border: #FFF 1px solid;
   }

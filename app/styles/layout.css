@@ -1,11 +1,11 @@
 /*
 Syntax error: Undefined mixin 'single-transition'.
-        on line 30 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss, in `single-transition'
-        from line 30 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss
+        on line 34 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss, in `single-transition'
+        from line 34 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss
 
 Backtrace:
-/Users/joneath/workspace/deck/app/assets/styles/layout.scss:30:in `single-transition'
-/Users/joneath/workspace/deck/app/assets/styles/layout.scss:30
+/Users/joneath/workspace/deck/app/assets/styles/layout.scss:34:in `single-transition'
+/Users/joneath/workspace/deck/app/assets/styles/layout.scss:34
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.2.12/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -58,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'single-transition'.\A         on line 30 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss, in `single-transition'\A         from line 30 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss"; }
+  content: "Syntax error: Undefined mixin 'single-transition'.\A         on line 34 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss, in `single-transition'\A         from line 34 of /Users/joneath/workspace/deck/app/assets/styles/layout.scss"; }
