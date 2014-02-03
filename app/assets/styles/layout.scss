@@ -19,7 +19,9 @@ body {
   overflow: hidden;
 }
 .no-touch {
-  overflow: visible;
+  body {
+    overflow: visible;
+  }
 }
 .site-nav-glass {
   height: 100%;
