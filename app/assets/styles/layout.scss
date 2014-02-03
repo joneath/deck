@@ -282,6 +282,7 @@ a {
   height: 100%;
   background-color: #fff;
   position: relative;
+  @include translate3d(0,0,0);
 
   &.next {
     cursor: pointer;
@@ -433,6 +434,12 @@ a {
 }
 .no-touch {
   .card {
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+
     &.next {
       .card-content {
         padding-top: 0;

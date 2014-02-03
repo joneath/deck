@@ -458,15 +458,15 @@ $(function() {
 
     if (diff > 0) {
       touchDiff = 0;
-      $('.cards.active .active .card-content').css({
-        'transform': 'translate3d(0,' + diff + 'px,0)'
-      });
-      $('.cards.active .cover .bg.blurred').css({
-        opacity: Math.min((opacityDiff * .70), .7),
-      });
-      $('.cards.active .cover .bg.normal').css({
-        opacity: .70 - (opacityDiff * .70),
-      });
+      // $('.cards.active .active .card-content').css({
+      //   'transform': 'translate3d(0,' + diff + 'px,0)'
+      // });
+      // $('.cards.active .cover .bg.blurred').css({
+      //   opacity: Math.min((opacityDiff * .70), .7),
+      // });
+      // $('.cards.active .cover .bg.normal').css({
+      //   opacity: .70 - (opacityDiff * .70),
+      // });
     } else {
       $('.cards.active').css({
         'transform': 'translate3d(0,' + diff + 'px,0)'
