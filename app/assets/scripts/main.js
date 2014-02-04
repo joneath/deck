@@ -431,7 +431,7 @@ $(function() {
     touchTranslated = -(activeIndex * cardHeight);
     $('.cards.active').css({
       'transform': 'translate3d(0,' + touchTranslated + 'px,0)',
-      'transition': 'all .2s'
+      'transition': 'all .3s'
     });
 
     $('.card-dot.active').removeClass('active');
