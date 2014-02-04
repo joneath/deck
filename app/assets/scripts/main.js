@@ -255,6 +255,27 @@ $(function() {
         }).attr('data-translated', translate);
       }
     });
+    if ($nextCard.hasClass('text')) {
+      var textDiff = 50 - (diffPercent * 60);
+      textDiff = Math.max(textDiff, 0);
+      if ($nextCard.hasClass('to-left')) {
+        $nextCard.find('.left').css({
+          transform: 'translate3d(' + textDiff + '%,0,0)'
+        });
+        $nextCard.find('.right').css({
+          transform: 'translate3d(' + -textDiff + '%,0,0)',
+          opacity: diffPercent * 1.25
+        });
+      } else {
+        $nextCard.find('.left').css({
+          transform: 'translate3d(' + textDiff + '%,0,0)',
+          opacity: diffPercent * 1.25
+        });
+        $nextCard.find('.right').css({
+          transform: 'translate3d(' + -textDiff + '%,0,0)'
+        });
+      }
+    }
     if ($nextCard.hasClass('next')) {
       $nextCard.find('.bg.blurred').css({
         opacity: .70 - (opacityDiff * .70),

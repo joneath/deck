@@ -447,13 +447,13 @@ a {
     }
     &.coming-up,
     &.passed {
-      .card-bisected {
-        &.left,
-        &.right {
-          opacity: 1;
-          @include translate3d(0,0,0);
-        }
-      }
+      // .card-bisected {
+      //   &.left,
+      //   &.right {
+      //     opacity: 1;
+      //     @include translate3d(0,0,0);
+      //   }
+      // }
       // &.with-blockquote {
       //   .card-image {
       //     width: 25%;
@@ -529,8 +529,6 @@ a {
     }
   }
   .card-bisected {
-    @include single-transition(all, .45s);
-
     &.left {
       @include translate3d(50%,0,0);
     }
